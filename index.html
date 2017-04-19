@@ -104,7 +104,7 @@
             title.innerText = iTitle.value == "" ? title.innerText : iTitle.value;
 
             phone.innerText = iPhone.value == "" ? phone.innerText : iPhone.value;
-            var realPhone = iPhone.value.replace(' ', '');
+            var realPhone = iPhone.value.replace(/ /g, '');
             realPhone = realPhone.replace('0', '');
             phone.setAttribute('href', 'tel:+84' + realPhone);
 
