@@ -1,0 +1,117 @@
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+@font-face {
+	font-family: linotte;
+	src: url(fonts/linotte-regular.ttf);
+}
+@font-face {
+	font-family: linotteBold;
+	src: url(fonts/linotte-bold.ttf);
+}
+@font-face {
+	font-family: linotteSemi;
+	src: url(fonts/linotte-semi.ttf);
+}
+@font-face {
+	font-family: linotteHeavy;
+	src: url(fonts/linotte-heavy.ttf);
+}
+@font-face {
+	font-family: linotteLight;
+	src: url(fonts/linotte-light.ttf);
+}
+
+.contain {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 20px 0px;
+	font-family: linotte;
+	color: #384047;
+}
+
+.contain .divide {
+	background: #00AB6B;
+	text-transform: uppercase;
+	width: 50px;
+	height: 4px;
+	display: block;
+	margin-bottom: 16px;
+}
+
+.contain .logo {
+	position: absolute;
+	left: 508px;
+	top: 32px;
+}
+
+.contain .main .peo h4 {
+	text-transform: uppercase;
+	color: #00AB6B;
+	font-family: linotteBold;
+	float: left;
+	margin: 0px;
+}
+
+.contain .main .peo span {
+	float: left;
+	display: inline-block;
+}
+.contain .main .peo span.spa {
+	position: relative;
+	top: 6px;
+	width: 4px;
+	height: 4px;
+	background: #00AB6B;
+	border-radius: 50%;
+	margin-left: 10px;
+	margin-right: 11px;
+}
+
+.contain .main ul {
+	padding: 0px;
+	list-style: none;
+	margin: 10px 0px;
+}
+
+.contain .main ul li {
+	font-size: 14px;
+	word-spacing: 4px;
+	line-height: 18px;
+	margin-bottom: 1px;
+}
+
+.contain .main .website {
+	text-transform: uppercase;
+	font-family: linotteSemi;
+	font-size: 13px;
+}
+.contain .main .website i {
+	font-size: 20px;
+	margin-right: 12px;
+	position: relative;
+	top: 2px;
+}
+
+.contain .main ul li i {
+	font-size: 17px;
+	margin-right: 15px;
+	position: relative;
+}
+
+.contain .main .website .background {
+	height: 15px;
+	position: relative;
+	width: 215px;
+	background: #e2e2e2;
+	z-index: -1;
+	bottom: 17px;
+}
