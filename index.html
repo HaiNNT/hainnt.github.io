@@ -1,43 +1,91 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Mail Footer</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+    <title>Mail Footer</title>
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+    <style rel="stylesheet" type="text/css">
+        @font-face {
+            font-family: linotte;
+            src: url(fonts/linotte-regular.ttf);
+        }
+        
+        @font-face {
+            font-family: linotteBold;
+            src: url(fonts/linotte-bold.ttf);
+        }
+        
+        @font-face {
+            font-family: linotteSemi;
+            src: url(fonts/linotte-semi.ttf);
+        }
+        
+        @font-face {
+            font-family: linotteHeavy;
+            src: url(fonts/linotte-heavy.ttf);
+        }
+        
+        @font-face {
+            font-family: linotteLight;
+            src: url(fonts/linotte-light.ttf);
+        }
+        
+        html,
+        body {
+            font-family: linotte;
+        }
+        
+        .spa {
+            position: relative;
+            top: -2px;
+            width: 4px;
+            height: 4px;
+            background: #00AB6B;
+            border-radius: 50%;
+            margin-left: 10px;
+            margin-right: 11px;
+            display: inline-block;
+        }
+        
+        .name {
+            text-transform: uppercase;
+            color: #00AB6B;
+            font-family: linotteBold;
+        }
+    </style>
 </head>
+
 <body>
-<div class="wrapper">
-	<div class="contain">
-		<span class="divide"></span>
-		<span class="logo"><img src="images/logo-png.png"></span>
-		<div class="main">
-			<div class="peo clearfix">
-				<h4>Hoang Tuan Quyen</h4>
-				<span class="spa"></span>
-				<span>Graphic Designer</span>				
-			</div>
-			<ul>
-				<li>
-					<i class="fa fa-phone" aria-hidden="true"></i>
-					<span>096 48 96096 / 1900 636 002</span>
-				</li>
-				<li>
-					<i class="fa fa-skype" aria-hidden="true"></i>
-					zjakenz
-				</li>
-				<li>
-					<i class="fa fa-home" aria-hidden="true"></i>
-					4F-E1, Floor 4, Mirae Center, 268 To Hien Thanh Street, W.15, D.10, HCM City
-				</li>
-			</ul>
-			<div class="website">
-				<i class="fa fa-facebook-official" aria-hidden="true"></i>
-				<i class="fa fa-globe" aria-hidden="true"></i>
-				www.antoree.com
-				<div class="background"></div>
-			</div>
-		</div>
-	</div>
-</div>
+    <table style="width: 600px;">
+        <tr>
+            <td style="width: 65%">
+                <span class="name">Hoang Tuan Quyen</span>
+                <span class="spa"></span>
+                <span>Graphic Designer</span>
+            </td>
+            <td style="width: 35%"><img src="https://www.antoree.com/public/images/New-Layout/home-page.svg"></td>
+        </tr>
+    </table>
+    <table style="width: 600px;">
+        <tr>
+            <td style="width: 5%">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+            </td>
+            <td style="width: 95%">096 48 96096 / 1900 636 002</td>
+        </tr>
+        <tr>
+            <td style="width: 5%">
+                <i class="fa fa-skype" aria-hidden="true"></i>
+            </td>
+            <td style="width: 95%">wssb495</td>
+        </tr>
+        <tr>
+            <td style="width: 5%">
+                <i class="fa fa-home" aria-hidden="true"></i>
+            </td>
+            <td style="width: 95%">4F-E1, Floor 4, Mirae Center, 268 To Hien Thanh Street, W.15, D.10, HCM City</td>
+        </tr>
+    </table>
 </body>
+
 </html>
