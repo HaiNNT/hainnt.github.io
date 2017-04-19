@@ -104,12 +104,12 @@
             title.innerText = iTitle.value == "" ? title.innerText : iTitle.value;
 
             phone.innerText = iPhone.value == "" ? phone.innerText : iPhone.value;
-            var realPhone = iPhone.value.replace(/ /g, '');
+            var realPhone = phone.innerText.replace(/ /g, '');
             realPhone = realPhone.replace('0', '');
             phone.setAttribute('href', 'tel:+84' + realPhone);
 
             skype.innerText = iSkype.value == "" ? skype.innerText : iSkype.value;
-            skype.setAttribute('href', 'skype:' + iSkype.value + '?call');
+            skype.setAttribute('href', 'skype:' + skype.innerText + '?call');
 
             address.innerText = iAddress.value == "" ? address.innerText : iAddress.value;
         }
