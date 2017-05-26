@@ -4,37 +4,8 @@
 <head>
     <title>Mail Footer</title>
     <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
-    <style rel="stylesheet" type="text/css">
-        table td {
-            font-size: 11pt;
-        }
-        
-        .spa {
-            position: relative;
-            top: -2px;
-            width: 4px;
-            height: 4px;
-            background: #00AB6B;
-            border-radius: 50%;
-            margin-left: 10px;
-            margin-right: 11px;
-            display: inline-block;
-            font-size: 12pt;
-        }
-        
-        .name {
-            text-transform: uppercase;
-            color: #00AB6B;
-            font-size: 12pt;
-            font-weight: bold;
-        }
-        
-        a {
-            text-decoration: none;
-            color: #08a0de;
-        }
-        
-        input,
+    <style>
+        #form>input,
         select {
             width: 300px;
             padding: 5px;
@@ -45,53 +16,66 @@
 </head>
 
 <body>
-    <img style="margin-bottom: 5px;" src="images/divide.png" />
-    <table style="min-width: 600px;">
-        <tr>
-            <td style="width: 65%">
-                <span class="name" id="name">Nguyễn Ngọc Thanh Hải</span>
-                <span class="spa"></span>
-                <span class="title" id="title">Software Engineer</span>
-            </td>
-            <td style="width: 35%">
-                <a href="https://antoree.com"><img style="margin-left:20px;" src="images/logo.png"></a>
-            </td>
-        </tr>
+    <table cellpadding="0" cellspacing="0" border="0" style="box-sizing: border-box; border-collapse: collapse; border-spacing: 0px; background: none; border: 0px; margin: 0px; padding: 0px;">
+        <tbody style="box-sizing: border-box;">
+            <tr style="box-sizing: border-box;">
+                <td colspan="2" style="box-sizing: border-box; padding-bottom: 5px; color: rgb(0, 174, 109); font-family: Arial, Helvetica, sans-serif;">
+                    <img src="https://antoree.com/public/images/New-Layout/home-page.svg" style="padding-bottom: 10px;">
+                    <span style="height: 3px; width: 50px; background: #00ae6d; display: block;margin-bottom: 8px;"></span>
+                </td>
+            </tr>
+            <tr style="box-sizing: border-box;">
+                <td colspan="2" style="box-sizing: border-box;  color:rgb(75, 75, 75); font-family: Arial, Helvetica, sans-serif;">
+                    <b id="name" style="font-size: 18px; text-transform: uppercase;">
+                    Nguyễn Ngọc Thanh Hải 
+                    </b>
+                    <font id="gender" size="2">(Mr)</font>
+                </td>
+            </tr>
+            <tr style="box-sizing: border-box;">
+                <td colspan="2" style="box-sizing: border-box; color: rgb(75, 75, 75); font-size: 14px; font-family: Arial, Helvetica, sans-serif;">
+                    <i id="title" style="box-sizing: border-box;">Software Engineer</i>
+                </td>
+            </tr>
+            <tr style="box-sizing: border-box;">
+                <td width="20" valign="top" style="box-sizing: border-box; vertical-align: top; width: 20px; color: rgb(0, 174, 109); font-size: 14px; font-family: Arial, Helvetica, sans-serif;"><b>m</b></td>
+                <td style="box-sizing: border-box; color: rgb(75, 75, 75); font-size: 14px; font-family: Arial, Helvetica, sans-serif;">
+                    <a id="phone" href="tel:+841277849849" style="box-sizing: border-box; cursor: pointer; color: rgb(29, 161, 219); text-decoration-line: none;">
+                    0987480027
+                    </a> &nbsp;&nbsp;
+                    <span style="box-sizing: border-box; color: rgb(0, 174, 109);"><b>skype</b>&nbsp;&nbsp;</span>
+                    <a id="skype" href="skype:wssb495?call" style="box-sizing: border-box; cursor: pointer; color: rgb(29, 161, 219); text-decoration-line: none;">
+                        wssb495
+                        </a>
+                </td>
+            </tr>
+            <tr style="box-sizing: border-box;">
+                <td width="20" valign="top" style="box-sizing: border-box; vertical-align: top; width: 20px; color: rgb(0, 174, 109); font-size: 14px; font-family: Arial, Helvetica, sans-serif;"><b>a</b></td>
+                <td id="address" valign="top" style="box-sizing: border-box; vertical-align: top; color: rgb(75, 75, 75); font-size: 14px; font-family: Arial, Helvetica, sans-serif;">
+                    4F-E1, Floor 4, Mirae Center, 268 To Hien Thanh Street, W.15, D.10, HCM City
+                </td>
+            </tr>
+            <tr style="box-sizing: border-box;">
+                <td width="20" valign="top" style="box-sizing: border-box; vertical-align: top; width: 20px; color: rgb(0, 174, 109); font-size: 14px; font-family: Arial, Helvetica, sans-serif;"><b>w</b></td>
+                <td valign="top" style="box-sizing: border-box; vertical-align: top; color: rgb(75, 75, 75); font-size: 14px; font-family: Arial, Helvetica, sans-serif;">
+                    <a href="http://antoree.com/" style="box-sizing: border-box; cursor: pointer; color: rgb(29, 161, 219); text-decoration-line: none;">antoree.com</a> &nbsp;&nbsp;
+                    <span style="box-sizing: border-box; color: rgb(0, 174, 109);"><b>e</b>&nbsp;&nbsp;</span>
+                    <a id="email" href="mailto:joe@antoree.com" style="box-sizing: border-box; cursor: pointer; color: rgb(29, 161, 219); text-decoration-line: none;">
+                        hai.nguyen@antoree.com
+                        </a>
+                </td>
+            </tr>
+        </tbody>
     </table>
-    <table style="min-width: 600px;">
-        <tr>
-            <td style="width: 5%">
-                <img width="13px" src="images/call.png" />
-
-            </td>
-            <td style="width: 95%"><a id="phone" href="tel:+84987480027">0987 480 027</a> / 1900 636 002</td>
-        </tr>
-        <tr>
-            <td style="width: 5%">
-                <img width="13px" src="images/skype.png" />
-            </td>
-            <td style="width: 95%"><a id="skype" href="skype:wssb495?call">wssb495</a></td>
-        </tr>
-        <tr>
-            <td style="width: 5%">
-                <img width="13px" src="images/home.png" />
-            </td>
-            <td id="address" style="width: 95%">4F-E1, Floor 4, Mirae Center, 268 To Hien Thanh Street, W.15, D.10, HCM City</td>
-        </tr>
-    </table>
-    <table style="margin-top: 10px;">
-        <tr>
-            <td>
-                <img style="margin-right:10px;" width="18px" src="images/facebook.png" />
-                <img style="margin-right:10px;" width="18px" src="images/world.png" />
-                <a style="color: black;" href="https://antoree.com">WWW.ANTOREE.COM</a>
-            </td>
-        </tr>
-    </table>
-
-    <div style="margin-top: 50px;">
+    <div id="form" style="margin-top: 50px;">
         <input placeholder="Name" id="i-name"><br>
+        <div style="margin-top: 5px;">
+            <input type="radio" name="igender" value="(Mr)"> Male
+            <span style="margin: 0 20px;"></span>
+            <input type="radio" name="igender" value="(Ms)"> Female
+        </div>
         <input placeholder="Title" id="i-title"><br>
+        <input placeholder="Email" id="i-email"><br>
         <input placeholder="Phone" id="i-phone"><br>
         <input placeholder="Skype" id="i-skype"><br>
         <!--<input placeholder="Location" id="i-address">-->
@@ -106,19 +90,24 @@
     <script>
         function submit() {
             var name = document.getElementById('name');
+            var gender = document.getElementById('gender');
             var title = document.getElementById('title');
             var phone = document.getElementById('phone');
             var skype = document.getElementById('skype');
             var address = document.getElementById('address');
+            var email = document.getElementById('email');
 
             var iName = document.getElementById('i-name');
+            var iGender = getGender();
             var iTitle = document.getElementById('i-title');
             var iPhone = document.getElementById('i-phone');
             var iSkype = document.getElementById('i-skype');
             var iAddress = document.getElementById('i-address');
+            var iEmail = document.getElementById('i-email');
 
             name.innerText = iName.value == "" ? name.innerText : iName.value;
             title.innerText = iTitle.value == "" ? title.innerText : iTitle.value;
+            gender.innerText = iGender == null ? gender.innerText : iGender.value;
 
             phone.innerText = iPhone.value == "" ? phone.innerText : iPhone.value;
             var realPhone = phone.innerText.replace(/ /g, '');
@@ -129,6 +118,19 @@
             skype.setAttribute('href', 'skype:' + skype.innerText + '?call');
 
             address.innerText = iAddress.value == "" ? address.innerText : iAddress.value;
+
+            email.innerText = iEmail.value == "" ? email.innerText : iEmail.value;
+            email.setAttribute('href', 'mailto:' + email.innerText);
+        }
+
+        function getGender() {
+            var radios = document.getElementsByName('igender');
+
+            for (var i = 0, length = radios.length; i < length; i++) {
+                if (radios[i].checked) {
+                    return radios[i];
+                }
+            }
         }
     </script>
 </body>

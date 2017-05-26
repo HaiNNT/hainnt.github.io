@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mail Footer</title>
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+    <style rel="stylesheet" type="text/css">
+        table {
+            border-collapse: collapse;
+        }
+        
+        table td {
+            font-size: 11pt;
+        }
+        
+        .spa {
+            position: relative;
+            top: -2px;
+            width: 4px;
+            height: 4px;
+            background: #00AB6B;
+            border-radius: 50%;
+            margin-left: 10px;
+            margin-right: 11px;
+            display: inline-block;
+            font-size: 12pt;
+        }
+        
+        .name {
+            text-transform: uppercase;
+            color: #00AB6B;
+            font-size: 12pt;
+            font-weight: bold;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #08a0de;
+        }
+        
+        input,
+        select {
+            width: 300px;
+            padding: 5px;
+            margin-top: 5px;
+            font-size: 11pt;
+        }
+    </style>
+</head>
+
+<body>
+    <img style="margin-bottom: 5px;" src="images/divide.png" />
+    <table style="min-width: 600px;">
+        <tr>
+            <td style="width: 65%">
+                <span class="name" id="name">Nguyễn Ngọc Thanh Hải</span>
+                <span class="spa"></span>
+                <span class="title" id="title">Software Engineer</span>
+            </td>
+            <td style="width: 35%">
+                <a href="https://antoree.com"><img style="margin-left:20px;" src="images/logo.png"></a>
+            </td>
+        </tr>
+    </table>
+    <table style="min-width: 600px;">
+        <tr>
+            <td style="width: 5%">
+                <img width="13px" src="images/call.png" />
+
+            </td>
+            <td style="width: 95%"><a id="phone" href="tel:+84987480027">0987 480 027</a> / 1900 636 002</td>
+        </tr>
+        <tr>
+            <td style="width: 5%">
+                <img width="13px" src="images/skype.png" />
+            </td>
+            <td style="width: 95%"><a id="skype" href="skype:wssb495?call">wssb495</a></td>
+        </tr>
+        <tr>
+            <td style="width: 5%">
+                <img width="13px" src="images/home.png" />
+            </td>
+            <td id="address" style="width: 95%">4F-E1, Floor 4, Mirae Center, 268 To Hien Thanh Street, W.15, D.10, HCM City</td>
+        </tr>
+    </table>
+    <table style="margin-top: 10px;">
+        <tr>
+            <td>
+                <img style="margin-right:10px;" width="18px" src="images/facebook.png" />
+                <img style="margin-right:10px;" width="18px" src="images/world.png" />
+                <a style="color: black;" href="https://antoree.com">WWW.ANTOREE.COM</a>
+            </td>
+        </tr>
+    </table>
+
+    <div style="margin-top: 50px;">
+        <input placeholder="Name" id="i-name"><br>
+        <input placeholder="Title" id="i-title"><br>
+        <input placeholder="Phone" id="i-phone"><br>
+        <input placeholder="Skype" id="i-skype"><br>
+        <!--<input placeholder="Location" id="i-address">-->
+        <select id="i-address">
+            <option value="">Location</option>
+            <option value="4F-E1, Floor 4, Mirae Center, 268 To Hien Thanh Street, W.15, D.10, HCM City">HCM</option>
+            <option value="Level 6, Phan Anh Tower, 27 To Vinh Dien, Thanh Xuan District, Hanoi">HN</option>
+        </select><br>
+        <button style="margin-top: 5px;padding: 3px; font-size:11pt;" onclick="submit()">Submit</button>
+    </div>
+
+    <script>
+        function submit() {
+            var name = document.getElementById('name');
+            var title = document.getElementById('title');
+            var phone = document.getElementById('phone');
+            var skype = document.getElementById('skype');
+            var address = document.getElementById('address');
+
+            var iName = document.getElementById('i-name');
+            var iTitle = document.getElementById('i-title');
+            var iPhone = document.getElementById('i-phone');
+            var iSkype = document.getElementById('i-skype');
+            var iAddress = document.getElementById('i-address');
+
+            name.innerText = iName.value == "" ? name.innerText : iName.value;
+            title.innerText = iTitle.value == "" ? title.innerText : iTitle.value;
+
+            phone.innerText = iPhone.value == "" ? phone.innerText : iPhone.value;
+            var realPhone = phone.innerText.replace(/ /g, '');
+            realPhone = realPhone.replace('0', '');
+            phone.setAttribute('href', 'tel:+84' + realPhone);
+
+            skype.innerText = iSkype.value == "" ? skype.innerText : iSkype.value;
+            skype.setAttribute('href', 'skype:' + skype.innerText + '?call');
+
+            address.innerText = iAddress.value == "" ? address.innerText : iAddress.value;
+        }
+    </script>
+</body>
+
+</html>
