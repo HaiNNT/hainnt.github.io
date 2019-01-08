@@ -11,7 +11,7 @@ $(window).load(function() {
 });
 
 $(document).ready(function() {
-    var secondsTo = (new Date(2019, 2, 30, 7, 30, 0) - Date.now()) / 1000;
+    var secondsTo = (new Date(2019, 3, 18, 7, 30, 0) - Date.now()) / 1000;
     var clock = $('.your-clock').FlipClock(secondsTo, {
         // ... your options here
         clockFace: 'DailyCounter',
