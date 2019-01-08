@@ -1,138 +1,480 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 
 <head>
-    <title>Mail Footer</title>
-    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
-    <style>
-        #form>input,
-        select {
-            width: 300px;
-            padding: 5px;
-            margin-top: 5px;
-            font-size: 11pt;
-        }
-    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1">
+    <title>Always Wedding Bootstrap Website Template| Webthemez</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/flipclock.css" />
+    <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800|Clicker+Script' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="js/respond-1.1.0.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/html5element.js"></script>
+<![endif]-->
+
 </head>
 
 <body>
-    <table cellpadding="0" cellspacing="0" border="0" style="box-sizing: border-box; border-collapse: collapse; border-spacing: 0px; background: none; border: 0px; margin: 0px; padding: 0px;">
-        <tbody style="box-sizing: border-box;">
-            <tr style="box-sizing: border-box;">
-                <td colspan="2" style="box-sizing: border-box; padding-bottom: 5px; color: rgb(0, 174, 109); font-family: Arial, Helvetica, sans-serif;">
-                    <img width="121" src="images/logo.png" style="padding-bottom: 10px;">
-                    <span style="height: 3px; width: 50px; background: #00ae6d; display: block;margin-bottom: 8px;"></span>
-                </td>
-            </tr>
-            <tr style="box-sizing: border-box;">
-                <td colspan="2" style="box-sizing: border-box;  color:rgb(75, 75, 75); font-family: Arial, Helvetica, sans-serif;">
-                    <b id="name" style="font-size: 18px; text-transform: uppercase;">
-                    Nguyễn Ngọc Thanh Hải 
-                    </b>
-                    <font id="gender" size="2">(Mr)</font>
-                </td>
-            </tr>
-            <tr style="box-sizing: border-box;">
-                <td colspan="2" style="box-sizing: border-box; color: rgb(75, 75, 75); font-size: 14px; font-family: Arial, Helvetica, sans-serif;">
-                    <i id="title" style="box-sizing: border-box;">Software Engineer</i>
-                </td>
-            </tr>
-            <tr style="box-sizing: border-box;">
-                <td width="20" valign="top" style="box-sizing: border-box; vertical-align: top; width: 20px; color: rgb(0, 174, 109); font-size: 14px; font-family: Arial, Helvetica, sans-serif;"><b>m</b></td>
-                <td style="box-sizing: border-box; color: rgb(75, 75, 75); font-size: 14px; font-family: Arial, Helvetica, sans-serif;">
-                    <a id="phone" href="tel:+841277849849" style="box-sizing: border-box; cursor: pointer; color: rgb(29, 161, 219); text-decoration-line: none;">
-                    0987480027
-                    </a> &nbsp;&nbsp;
-                    <span style="box-sizing: border-box; color: rgb(0, 174, 109);"><b>skype</b>&nbsp;&nbsp;</span>
-                    <a id="skype" href="skype:wssb495?call" style="box-sizing: border-box; cursor: pointer; color: rgb(29, 161, 219); text-decoration-line: none;">
-                        wssb495
-                        </a>
-                </td>
-            </tr>
-            <tr style="box-sizing: border-box;">
-                <td width="20" valign="top" style="box-sizing: border-box; vertical-align: top; width: 20px; color: rgb(0, 174, 109); font-size: 14px; font-family: Arial, Helvetica, sans-serif;"><b>a</b></td>
-                <td id="address" valign="top" style="box-sizing: border-box; vertical-align: top; color: rgb(75, 75, 75); font-size: 14px; font-family: Arial, Helvetica, sans-serif;">
-                    4F-E1, Floor 4, Mirae Center, 268 To Hien Thanh Street, W.15, D.10, HCM City
-                </td>
-            </tr>
-            <tr style="box-sizing: border-box;">
-                <td width="20" valign="top" style="box-sizing: border-box; vertical-align: top; width: 20px; color: rgb(0, 174, 109); font-size: 14px; font-family: Arial, Helvetica, sans-serif;"><b>w</b></td>
-                <td valign="top" style="box-sizing: border-box; vertical-align: top; color: rgb(75, 75, 75); font-size: 14px; font-family: Arial, Helvetica, sans-serif;">
-                    <a href="http://antoree.com/" style="box-sizing: border-box; cursor: pointer; color: rgb(29, 161, 219); text-decoration-line: none;">antoree.com</a> &nbsp;&nbsp;
-                    <span style="box-sizing: border-box; color: rgb(0, 174, 109);"><b>e</b>&nbsp;&nbsp;</span>
-                    <a id="email" href="mailto:joe@antoree.com" style="box-sizing: border-box; cursor: pointer; color: rgb(29, 161, 219); text-decoration-line: none;">
-                        hai.nguyen@antoree.com
-                        </a>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <div id="form" style="margin-top: 50px;">
-        <input placeholder="Name" id="i-name"><br>
-        <div style="margin-top: 5px;">
-            <input type="radio" name="igender" value="(Mr)"> Male
-            <span style="margin: 0 20px;"></span>
-            <input type="radio" name="igender" value="(Ms)"> Female
+    <div id="intros" class="demo-2">
+        <div class="content">
+            <div id="large-header" class="large-header">
+                <canvas id="demo-canvas"></canvas>
+                <div class="main-title">
+                    <!-- <h1>always</span></h1> -->
+                    <div class="top_left_cont zoomIn wow animated">
+                        <h2>We’re getting married.<br> <strong>Hải & Trúc</strong></h2>
+                        <!-- <h3>on April 30th 2019, Long Xuyên, An Giang</h3> -->
+                        <h3 class="your-clock"></h3>
+                        <h3>30th April 2019</h3>
+                    </div>
+                </div>
+            </div>
         </div>
-        <input placeholder="Title" id="i-title"><br>
-        <input placeholder="Email" id="i-email"><br>
-        <input placeholder="Phone" id="i-phone"><br>
-        <input placeholder="Skype" id="i-skype"><br>
-        <!--<input placeholder="Location" id="i-address">-->
-        <select id="i-address">
-            <option value="">Location</option>
-            <option value="4F-E1, Floor 4, Mirae Center, 268 To Hien Thanh Street, W.15, D.10, HCM City">HCM</option>
-            <option value="Level 6, Phan Anh Tower, 27 To Vinh Dien, Thanh Xuan District, Hanoi">HN</option>
-        </select><br>
-        <button style="margin-top: 5px;padding: 3px; font-size:11pt;" onclick="submit()">Submit</button>
+
     </div>
+    <!-- /container -->
 
-    <script>
-        function submit() {
-            var name = document.getElementById('name');
-            var gender = document.getElementById('gender');
-            var title = document.getElementById('title');
-            var phone = document.getElementById('phone');
-            var skype = document.getElementById('skype');
-            var address = document.getElementById('address');
-            var email = document.getElementById('email');
+    <!--Header_section-->
+    <header id="header_wrapper">
+        <div class="container">
+            <div class="header_box">
+                <div class="logo">
+                    <a href="#"><img src="img/logo.png" alt="logo"></a>
+                </div>
+                <nav class="navbar navbar-inverse" role="navigation">
+                    <div class="navbar-header">
+                        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                    </div>
+                    <div id="main-nav" class="collapse navbar-collapse navStyle">
+                        <ul class="nav navbar-nav" id="mainNav">
+                            <li class="active"><a href="#intros" class="scroll-link">Home</a></li>
+                            <li><a href="#aboutUs" class="scroll-link">About Us</a></li>
+                            <li><a href="#service" class="scroll-link">Program</a></li>
+                            <li><a href="#Portfolio" class="scroll-link">Photo Gallery</a></li>
+                            <li><a href="#team" class="scroll-link">Family</a></li>
+                            <li><a href="#contact" class="scroll-link">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--Header_section-->
 
-            var iName = document.getElementById('i-name');
-            var iGender = getGender();
-            var iTitle = document.getElementById('i-title');
-            var iPhone = document.getElementById('i-phone');
-            var iSkype = document.getElementById('i-skype');
-            var iAddress = document.getElementById('i-address');
-            var iEmail = document.getElementById('i-email');
+    <section id="aboutUs">
+        <!--Aboutus-->
+        <div class="inner_wrapper about-us aboutUs-container fadeInLeft animated wow">
+            <div class="container">
+                <h2>About Us</h2>
+                <h6>Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci ipsum</h6>
+                <div class="inner_section">
+                    <div class="row">
+                        <div class="col-md-6"> <img class="img-responsive" src="img/HHTT2036.JPG" align=""> </div>
+                        <div class="col-md-6">
+                            <h3>Bride’s story</h3>
+                            <p>Lorem ipsum dolor sit amet, quo meis voluptaria, erant bonorum albucius et per, ei placerat eu, te eos porro veniam. An everti maiorum detracto mea. Eu eos dicam voluptaria, erant bonorum albucius et per, ei sapientem accommodare
+                                est. Saepe dolorum constituam ei vel. Te sit malorum ceteros repudiandae, ne tritani adipisci vis.</p>
+                            <h4>Hobbies </h4>
+                            <ul class="about-us-list">
+                                <li class="points">Consectetur Morbi sagittis, sem quisci ipsum gravida tortor</li>
+                                <li class="points">Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida </li>
+                                <li class="points">Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci gravida </li>
+                                <li class="points">Sagittis, sem quis lacinia faucibus, orci ipsum gravida </li>
+                                <li class="points">Ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci</li>
+                            </ul>
+                            <!-- /.about-us-list -->
+                        </div>
+                    </div>
+                    <div class="row mrgTop30">
 
-            name.innerText = iName.value == "" ? name.innerText : iName.value;
-            title.innerText = iTitle.value == "" ? title.innerText : iTitle.value;
-            gender.innerText = iGender == null ? gender.innerText : iGender.value;
+                        <div class="col-md-6">
+                            <h3>Groom’s story</h3>
+                            <p>Lorem ipsum dolor sit amet, quo meis voluptaria, erant bonorum albucius et per, ei placerat eu, te eos porro veniam. An everti maiorum detracto mea. Eu eos dicam voluptaria, erant bonorum albucius et per, ei sapientem accommodare
+                                est. Saepe dolorum constituam ei vel. Te sit malorum ceteros repudiandae, ne tritani adipisci vis.</p>
+                            <h4>Hobbies </h4>
+                            <ul class="about-us-list">
+                                <li class="points">Consectetur Morbi sagittis, sem quisci ipsum gravida tortor</li>
+                                <li class="points">Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida </li>
+                                <li class="points">Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci gravida </li>
+                                <li class="points">Sagittis, sem quis lacinia faucibus, orci ipsum gravida </li>
+                                <li class="points">Ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci</li>
+                            </ul>
+                            <!-- /.about-us-list -->
+                        </div>
+                        <div class="col-md-6"> <img class="img-responsive" src="img/HHTT1556.JPG" align=""> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Aboutus-->
 
-            phone.innerText = iPhone.value == "" ? phone.innerText : iPhone.value;
-            var realPhone = phone.innerText.replace(/ /g, '');
-            realPhone = realPhone.replace('0', '');
-            phone.setAttribute('href', 'tel:+84' + realPhone);
 
-            skype.innerText = iSkype.value == "" ? skype.innerText : iSkype.value;
-            skype.setAttribute('href', 'skype:' + skype.innerText + '?call');
+    <!--Service-->
+    <section id="service">
+        <div class="container">
+            <h2>Our Program</h2>
+            <h6>Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci ipsum</h6>
+            <div class="service_wrapper">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="service_icon delay-03s animated wow  zoomIn"> <span><i class="fa fa-bitbucket"></i></span> </div>
+                        <div class="service_block">
 
-            address.innerText = iAddress.value == "" ? address.innerText : iAddress.value;
+                            <h3 class="animated fadeInUp wow">Bachelor Party</h3>
+                            <p class="animated fadeInDown wow">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service_icon icon2  delay-03s animated wow zoomIn"> <span><i class="fa fa-bank"></i></span> </div>
+                        <div class="service_block">
+                            <h3 class="animated fadeInUp wow">Wedding</h3>
+                            <p class="animated fadeInDown wow">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service_icon icon3  delay-03s animated wow zoomIn"> <span><i class="fa fa-apple"></i></span> </div>
+                        <div class="service_block">
 
-            email.innerText = iEmail.value == "" ? email.innerText : iEmail.value;
-            email.setAttribute('href', 'mailto:' + email.innerText);
-        }
+                            <h3 class="animated fadeInUp wow">Cocktail Dinner</h3>
+                            <p class="animated fadeInDown wow">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service_icon icon3  delay-03s animated wow zoomIn"> <span><i class="fa fa-heart"></i></span> </div>
+                        <div class="service_block">
 
-        function getGender() {
-            var radios = document.getElementsByName('igender');
+                            <h3 class="animated fadeInUp wow">Reception</h3>
+                            <p class="animated fadeInDown wow">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Service-->
 
-            for (var i = 0, length = radios.length; i < length; i++) {
-                if (radios[i].checked) {
-                    return radios[i];
-                }
-            }
-        }
-    </script>
+
+
+
+    <!-- Portfolio -->
+    <section id="Portfolio" class="content">
+
+        <!-- Container -->
+        <div class="container portfolio_title">
+
+            <!-- Title -->
+            <div class="section-title">
+                <h2>Photo Gallery</h2>
+                <h6>Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci ipsum</h6>
+
+            </div>
+            <!--/Title -->
+
+        </div>
+        <!-- Container -->
+
+        <div class="portfolio-top"></div>
+
+        <!-- Portfolio Filters -->
+        <div class="portfolio">
+
+            <div id="filters" class="sixteen columns" style="display:none">
+                <ul class="clearfix">
+                    <li>
+                        <a id="all" href="#" data-filter="*" class="active">
+                            <h5>All</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="#" data-filter=".prototype">
+                            <h5>Prototype</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="#" data-filter=".design">
+                            <h5>Design</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="#" data-filter=".android">
+                            <h5>Android</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="#" data-filter=".appleIOS">
+                            <h5>Apple IOS</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="#" data-filter=".web">
+                            <h5>Web App</h5>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--/Portfolio Filters -->
+
+            <!-- Portfolio Wrapper -->
+            <div class="isotope fadeInLeft animated wow grid" style="position: relative; overflow: hidden; height: 480px;" id="portfolio_wrapper">
+                <!-- Portfolio Item -->
+                <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   appleIOS isotope-item effect-oscar">
+
+                    <div class="portfolio_img">
+                        <img src="img/portfolio_pic1.jpg" alt="Portfolio 1"> </div>
+                    <figcaption>
+                        <div>
+                            <a href="img/portfolio_pic1.jpg" class="fancybox">
+                                <h2>Warm <span>Oscar</span></h2>
+                                <p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+                            </a>
+                        </div>
+                    </figcaption>
+                </figure>
+                <!--/Portfolio Item -->
+
+                <!-- Portfolio Item-->
+                <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design isotope-item effect-oscar">
+                    <div class="portfolio_img"> <img src="img/portfolio_pic2.jpg" alt="Portfolio 1"> </div>
+                    <figcaption>
+                        <div>
+                            <a href="img/portfolio_pic2.jpg" class="fancybox">
+                                <h2>Warm <span>Oscar</span></h2>
+                                <p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+                            </a>
+                        </div>
+                    </figcaption>
+                </figure>
+                <!--/Portfolio Item -->
+
+                <!-- Portfolio Item -->
+                <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design  isotope-item effect-oscar">
+                    <div class="portfolio_img"> <img src="img/portfolio_pic3.jpg" alt="Portfolio 1"> </div>
+                    <figcaption>
+                        <div>
+                            <a href="img/portfolio_pic3.jpg" class="fancybox">
+                                <h2>Warm <span>Oscar</span></h2>
+                                <p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+                            </a>
+                        </div>
+                    </figcaption>
+                </figure>
+                <!--/Portfolio Item-->
+
+                <!-- Portfolio Item-->
+                <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  android  prototype web isotope-item effect-oscar">
+                    <div class="portfolio_img"> <img src="img/portfolio_pic4.jpg" alt="Portfolio 1"> </div>
+                    <figcaption>
+                        <div>
+                            <a href="img/portfolio_pic4.jpg" class="fancybox">
+                                <h2>Warm <span>Oscar</span></h2>
+                                <p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+                            </a>
+                        </div>
+                    </figcaption>
+                </figure>
+                <!-- Portfolio Item -->
+
+                <!-- Portfolio Item -->
+                <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design isotope-item effect-oscar">
+                    <div class="portfolio_img"> <img src="img/portfolio_pic5.jpg" alt="Portfolio 1"> </div>
+                    <figcaption>
+                        <div>
+                            <a href="img/portfolio_pic5.jpg" class="fancybox">
+                                <h2>Warm <span>Oscar</span></h2>
+                                <p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+                            </a>
+                        </div>
+                    </figcaption>
+                </figure>
+                <!--/Portfolio Item -->
+
+                <!-- Portfolio Item -->
+                <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  web isotope-item effect-oscar">
+                    <div class="portfolio_img"> <img src="img/portfolio_pic6.jpg" alt="Portfolio 1"> </div>
+                    <figcaption>
+                        <div>
+                            <a href="img/portfolio_pic6.jpg" class="fancybox">
+                                <h2>Warm <span>Oscar</span></h2>
+                                <p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+                            </a>
+                        </div>
+                    </figcaption>
+                </figure>
+                <!--/Portfolio Item -->
+
+                <!-- Portfolio Item  -->
+                <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design web isotope-item effect-oscar">
+                    <div class="portfolio_img"> <img src="img/portfolio_pic7.jpg" alt="Portfolio 1"> </div>
+                    <figcaption>
+                        <div>
+                            <a href="img/portfolio_pic7.jpg" class="fancybox">
+                                <h2>Warm <span>Oscar</span></h2>
+                                <p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+                            </a>
+                        </div>
+                    </figcaption>
+                </figure>
+                <!--/Portfolio Item -->
+
+                <!-- Portfolio Item -->
+                <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   android isotope-item effect-oscar">
+                    <div class="portfolio_img"> <img src="img/portfolio_pic8.jpg" alt="Portfolio 1"> </div>
+                    <figcaption>
+                        <div>
+                            <a href="img/portfolio_pic8.jpg" class="fancybox">
+                                <h2>Warm <span>Oscar</span></h2>
+                                <p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+                            </a>
+                        </div>
+                    </figcaption>
+                </figure>
+                <!--/Portfolio Item -->
+
+            </div>
+            <!--/Portfolio Wrapper -->
+
+        </div>
+        <!--/Portfolio Filters -->
+
+        <div class="portfolio_btm"></div>
+
+
+        <div id="project_container">
+            <div class="clear"></div>
+            <div id="project_data"></div>
+        </div>
+
+
+    </section>
+    <!--/Portfolio -->
+
+    <section class="page_section team" id="team">
+        <!--main-section team-start-->
+        <div class="container">
+            <h2>Our Family</h2>
+            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing.</h6>
+
+            <div id="team" name="team">
+                <div class="container">
+                    <div class="row centered">
+
+                        <div class="col-md-3 centered"> <img class="img img-circle" src="img/HHTT1520.JPG" height="120px" width="120px" alt="">
+                            <h4><strong>Nguyễn Hoàng Tùng</strong></h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci ipsum gravida tortor.</p><br/> </div>
+                        <div class="col-md-3 centered"> <img class="img img-circle" src="img/IMG_3469.JPG" height="120px" width="120px" alt="">
+                            <h4><b>Lâm Thị Ngọc Huệ</b></h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci ipsum gravida tortor.</p><br/> </div>
+                        <div class="col-md-3 centered"> <img class="img img-circle" src="img/IMG_3614.JPG" height="120px" width="120px" alt="">
+                            <h4><b>Trần Văn Sĩ</b></h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci ipsum gravida tortor.</p><br/> </div>
+                        <div class="col-md-3 centered"> <img class="img img-circle" src="img/mebau.jpg" height="120px" width="120px" alt="">
+                            <h4><b>Lê Thị Thái Thủy</b></h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci ipsum gravida tortor.</p><br/>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- row -->
+            </div>
+        </div>
+    </section>
+    <!--/Team-->
+    <!--Footer-->
+    <footer class="footer_wrapper" id="contact">
+        <div class="container">
+            <section class="page_section contact" id="contact">
+                <div class="contact_section">
+                    <h2>Contact Us</h2>
+                    <h6>Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci ipsum</h6>
+
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 wow fadeInLeft">
+                        <div class="contact_info">
+                            <div class="detail">
+                                <h4>Location Address</h4>
+                                <p>Riock Church</br> #104, Some street, NewYork, USA</p>
+                            </div>
+                            <div class="detail">
+                                <h4>call us</h4>
+                                <p>+1 234 567890</p>
+                            </div>
+                            <div class="detail">
+                                <h4>Email us</h4>
+                                <p>support@sitename.com</p>
+                            </div>
+                        </div>
+
+
+
+                        <ul class="social_links">
+                            <li class="twitter animated bounceIn wow delay-02s"><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
+                            <li class="facebook animated bounceIn wow delay-03s"><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
+                            <li class="pinterest animated bounceIn wow delay-04s"><a href="javascript:void(0)"><i class="fa fa-pinterest"></i></a></li>
+                            <li class="gplus animated bounceIn wow delay-05s"><a href="javascript:void(0)"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-8 wow fadeInLeft delay-06s">
+                        <div class="form">
+                            <!--NOTE: Update your email Id in "contact_me.php" file in order to receive emails from your contact form-->
+                            <form name="sentMessage" id="contactForm" novalidate>
+                                <div class="control-group">
+                                    <div class="controls">
+                                        <input type="text" class="form-control" placeholder="Full Name" id="name" required data-validation-required-message="Please enter your name" />
+                                        <p class="help-block"></p>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="controls">
+                                        <input type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Please enter your email" />
+                                    </div>
+                                </div>
+
+                                <div class="control-group">
+                                    <div class="controls">
+                                        <textarea rows="10" cols="100" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter your message" minlength="5" data-validation-minlength-message="Min 5 characters" maxlength="999" style="resize:none"></textarea>
+                                    </div>
+                                </div>
+                                <div id="success"> </div>
+                                <!-- For success/fail messages -->
+                                <button type="submit" class="btn btn-primary input-btn pull-right">Send</button><br />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="container">
+            <div class="footer_bottom"><span>Copyright © 2018,    Template by <a href="http://webthemez.com/wedding/">WebThemez.com</a>. </span> </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+    <script type="text/javascript" src="js/jquery.nav.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.js"></script>
+    <script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/wow.js"></script>
+    <script src="contact/jqBootstrapValidation.js"></script>
+    <script src="js/rAF.js"></script>
+    <script src="js/demo-2.js"></script>
+    <script src="contact/contact_me.js"></script>
+    <script type="text/javascript" src="js/flipclock.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+
 </body>
 
 </html>
