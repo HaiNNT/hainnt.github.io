@@ -5,8 +5,8 @@ Licence under Creative Commons Attribution 3.0
 -------------------------------------------------------*/
 
 @charset "utf-8";
-@import url(http://fonts.googleapis.com/css?family=Raleway:800,700,400);
-@import url(http://fonts.googleapis.com/css?family=Signika:400,600);
+@import url(https://fonts.googleapis.com/css?family=Raleway:800,700,400);
+@import url(https://fonts.googleapis.com/css?family=Signika:400,600);
 
 /* Reset
 ---------------------------------*/
@@ -212,7 +212,6 @@ figure.effect-oscar:hover p {
     -webkit-transform: scale(1);
     transform: scale(1);
     color: #fff;
-    +++++++
 }
 
 figure.effect-oscar:hover figcaption {
@@ -342,7 +341,6 @@ div#main-nav {
 
 .navStyle ul li:first-child {
     /*margin:0px;*/
-    ;
 }
 
 .navStyle ul li:last-child {
@@ -649,7 +647,7 @@ a.read_more:hover {
 }
 
 .service-list-col1 i {
-    display: ;
+    /* display: ; */
     color: #888;
     font-size: 19px;
     font-style: normal;
