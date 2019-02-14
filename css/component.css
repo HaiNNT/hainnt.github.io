@@ -1,7 +1,7 @@
 /* Header */
 
 .large-header {
-    position: relative;
+    position: absolute;
     width: 100%;
     background: #333;
     overflow: hidden;
@@ -14,10 +14,25 @@
     background-image: url('../img/HHTT2068.JPG');
 }
 
-.demo-2 .large-header {
+#img1 {
     background-image: url('../img/HHTT2068.JPG');
     background-position: center bottom;
+    z-index: 5;
 }
+
+#img2 {
+    background-image: url('../img/HHTT2062.JPG');
+    background-position: center bottom;
+    z-index: 4;
+}
+
+#img3 {
+    background-image: url('../img/IMG_3556.JPG');
+    background-position: center bottom;
+    z-index: 3;
+}
+
+.demo-2 #large-header {}
 
 .demo-3 .large-header {
     background: #7f8c8d;
@@ -37,6 +52,7 @@
     left: 50%;
     -webkit-transform: translate3d(-50%, -50%, 0);
     transform: translate3d(-50%, -50%, 0);
+    z-index: 10;
 }
 
 .main-title h1 {

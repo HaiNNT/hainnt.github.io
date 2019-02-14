@@ -18,6 +18,51 @@ $(document).ready(function() {
         countdown: true
     });
 
+    var img1 = document.getElementById("img1");
+    var img2 = document.getElementById("img2");
+    var img3 = document.getElementById("img3");
+
+    setTimeout(function() {
+        $(img1).fadeOut(900);
+    }, 4000);
+    setTimeout(function() {
+        $(img1).fadeIn(900);
+    }, 12000);
+
+    setTimeout(function() {
+        $(img2).fadeOut(900);
+    }, 8000);
+    setTimeout(function() {
+        $(img2).fadeIn(900);
+    }, 12000);
+
+    setInterval(function() {
+        setTimeout(function() {
+            $(img1).fadeOut(900);
+        }, 4000);
+        setTimeout(function() {
+            $(img1).fadeIn(900);
+        }, 12000);
+    }, 12000);
+
+    setInterval(function() {
+        setTimeout(function() {
+            $(img2).fadeOut(900);
+        }, 8000);
+        setTimeout(function() {
+            $(img2).fadeIn(900);
+        }, 12000);
+    }, 12000);
+
+    // setInterval(function() {
+    //     setTimeOut(function() {
+    //         $(img3).fadeOut();
+    //     }, 6000);
+    //     setTimeOut(function() {
+    //         $(img3).fadeIn();
+    //     }, 6000);
+    // }, 6000);
+
     $('#header_wrapper').scrollToFixed();
     $('.res-nav_click').click(function() {
         $('.main-nav').slideToggle();

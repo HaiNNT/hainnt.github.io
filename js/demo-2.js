@@ -1,6 +1,6 @@
 (function() {
 
-    var width, height, largeHeader, canvas, ctx, circles, target, animateHeader = true;
+    var width, height, largeHeader, img1, img2, canvas, ctx, circles, target, animateHeader = true;
 
     // Main
     initHeader();
@@ -9,10 +9,19 @@
     function initHeader() {
         width = window.innerWidth;
         height = window.innerHeight;
-        target = {x: 0, y: height};
+        target = { x: 0, y: height };
 
         largeHeader = document.getElementById('large-header');
-        largeHeader.style.height = height+'px';
+        largeHeader.style.height = height + 'px';
+        img1 = document.getElementById('img1');
+        img1.style.height = height + 'px';
+        img2 = document.getElementById('img2');
+        img2.style.height = height + 'px';
+        img3 = document.getElementById('img3');
+        img3.style.height = height + 'px';
+
+        intros = document.getElementById('intros');
+        intros.style.height = height + 'px';
 
         canvas = document.getElementById('demo-canvas');
         canvas.width = width;
@@ -21,7 +30,7 @@
 
         // create particles
         circles = [];
-        for(var x = 0; x < width*0.5; x++) {
+        for (var x = 0; x < width * 0.5; x++) {
             var c = new Circle();
             circles.push(c);
         }
@@ -35,22 +44,27 @@
     }
 
     function scrollCheck() {
-        if(document.body.scrollTop > height) animateHeader = false;
+        if (document.body.scrollTop > height) animateHeader = false;
         else animateHeader = true;
     }
 
     function resize() {
         width = window.innerWidth;
         height = window.innerHeight;
-        largeHeader.style.height = height+'px';
+        largeHeader.style.height = height + 'px';
+        img1.style.height = height + 'px';
+        img2.style.height = height + 'px';
+        img3.style.height = height + 'px';
+        intros.style.height = height + 'px';
+
         canvas.width = width;
         canvas.height = height;
     }
 
     function animate() {
-        if(animateHeader) {
-            ctx.clearRect(0,0,width,height);
-            for(var i in circles) {
+        if (animateHeader) {
+            ctx.clearRect(0, 0, width, height);
+            for (var i in circles) {
                 circles[i].draw();
             }
         }
@@ -69,22 +83,22 @@
         })();
 
         function init() {
-            _this.pos.x = Math.random()*width;
-            _this.pos.y = height+Math.random()*100;
-            _this.alpha = 0.1+Math.random()*0.3;
-            _this.scale = 0.1+Math.random()*0.3;
+            _this.pos.x = Math.random() * width;
+            _this.pos.y = height + Math.random() * 100;
+            _this.alpha = 0.1 + Math.random() * 0.3;
+            _this.scale = 0.1 + Math.random() * 0.3;
             _this.velocity = Math.random();
         }
 
         this.draw = function() {
-            if(_this.alpha <= 0) {
+            if (_this.alpha <= 0) {
                 init();
             }
             _this.pos.y -= _this.velocity;
             _this.alpha -= 0.0005;
             ctx.beginPath();
-            ctx.arc(_this.pos.x, _this.pos.y, _this.scale*10, 0, 2 * Math.PI, false);
-            ctx.fillStyle = 'rgba(255,255,255,'+ _this.alpha+')';
+            ctx.arc(_this.pos.x, _this.pos.y, _this.scale * 10, 0, 2 * Math.PI, false);
+            ctx.fillStyle = 'rgba(255,255,255,' + _this.alpha + ')';
             ctx.fill();
         };
     }
